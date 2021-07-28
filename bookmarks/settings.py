@@ -124,4 +124,14 @@ LOGIN_REDIRECT_URL = 'dashboard'
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# set https://myaccount.google.com/lesssecureapps to ON
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'ilyasdevdj@gmail.com'
+EMAIL_HOST_PASSWORD = '3$tYo8k&MTeB*'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+# DEFAULT_FROM_EMAIL = 'ilyasdevdj@gmail.com'
+# SERVER_EMAIL = 'ilyasdevdj@gmail.com'

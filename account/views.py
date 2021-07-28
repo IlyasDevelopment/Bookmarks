@@ -11,6 +11,9 @@ def dashboard(request):
                   'account/dashboard.html',
                   {'section': 'dashboard'})
 
+# def send_email(request):
+
+
 
 # def user_login(request):
 #     if request.method == 'POST':
