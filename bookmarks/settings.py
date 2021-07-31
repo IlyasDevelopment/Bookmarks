@@ -135,3 +135,6 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 # DEFAULT_FROM_EMAIL = 'ilyasdevdj@gmail.com'
 # SERVER_EMAIL = 'ilyasdevdj@gmail.com'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
