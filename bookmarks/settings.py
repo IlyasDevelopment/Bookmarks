@@ -132,7 +132,7 @@ LOGOUT_URL = 'logout'
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'ilyasdevdj@gmail.com'
-EMAIL_HOST_PASSWORD = '3$tYo8k&MTeB*'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 # DEFAULT_FROM_EMAIL = 'ilyasdevdj@gmail.com'
@@ -145,8 +145,17 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'account.authentication.EmailAuthBackend',
     'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.google.GoogleOAuth2',
 ]
 
-SOCIAL_AUTH_FACEBOOK_KEY = '346126577002824'  # Facebook App ID
-SOCIAL_AUTH_FACEBOOK_SECRET = '0e83d5618fc256b77649aab73667cd0f'  # Facebook App Secret
-# SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+SOCIAL_AUTH_FACEBOOK_KEY = ''  # Facebook App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = ''  # Facebook App Secret
+SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
+    'fields': 'id, name, email',
+}
+
+# Google Consumer Key
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = ''
+# Google Consumer Secret
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = ''
